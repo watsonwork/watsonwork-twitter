@@ -36,7 +36,7 @@ export TWITTER_ACCESS_TOKEN_SECRET=...
 
 Second, let's register the app with IBM Watson Workspace and get some keys!
 
-1. Go to [the developer apps page](https://workspace.ibm.com/developer/apps)
+1. Go to [the developer apps page](https://developer.watsonwork.ibm.com/apps)
 2. On the left, enter the `App Name` and the `Description of App`
 3. Click on `Add an outbound webhook`
 4. Give the webhook a name (e.g. "listen for messages") and check the `message-created` webhook. This is how we'll listen to messages in a space
@@ -59,7 +59,7 @@ You are almost there!!!
 
 ## Enable the webhook
 
-1. Assuming all environment variables are set (see above), go back to the [IBM Watson Work Services apps page](https://workspace.ibm.com/developer/apps) and click on the pencil icon to edit your app
+1. Assuming all environment variables are set (see above), go back to the [IBM Watson Work Services apps page](https://developer.watsonwork.ibm.com/apps) and click on the pencil icon to edit your app
 2. Check the box to enable your webhook
 3. Save your changes by clicking on "Edit app"
 
@@ -89,11 +89,11 @@ You can use curl to submit a query and test it (or just deploy to Bluemix and te
 ## What API does the app use?
 
 The app uses the [Watson Work OAuth API]
-(https://workspace.ibm.com/developer/docs) to authenticate and get an
+(https://developer.watsonwork.ibm.com/docs) to authenticate and get an
 OAuth token. It implements a Webhook endpoint according to the
-[Watson Work Webhook API](https://workspace.ibm.com/developer/docs) to
+[Watson Work Webhook API](https://developer.watsonwork.ibm.com/docs) to
 listen to conversations and receive messages. Finally, it uses the
-[Watson Work Spaces API] (https://workspace.ibm.com/developer/docs) to send
+[Watson Work Spaces API] (https://developer.watsonwork.ibm.com/docs) to send
 back greeting messages.
 
 ## How can I contribute?
